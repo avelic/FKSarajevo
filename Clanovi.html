@@ -5,6 +5,8 @@
 
 		<title>Fudbalski Klub Sarajevo</title>
 		<link rel="stylesheet" type="text/css" href="Main_Style.css">
+		<script type="text/javascript" src="Reg.js"></script>
+	
 
 	</head>
 	<body>
@@ -31,12 +33,12 @@
 		<div class="Forma">
 			<div class="unos">
 				<label for="kor" class="lab">Korisnik: </label> 
-				<input class="polje" type="text" id="kor">
+				<input class="polje" type="text" id="kor" oninput="ispravnostUser()" placeholder="Do 20 karaktera">
 
 			</div>
 			<div class="unos">
-				<label for="em" class="lab">E mail: </label> 
-				<input class="polje" type="email" id="em">
+				<label for="em" class="lab" >E mail: </label> 
+				<input class="polje" type="email" id="em" oninput="ispravnostEmail() " placeholder="Format:neko.neki@gmail.com">
 
 			</div>
 			<div class="unos">
@@ -45,8 +47,17 @@
 
 			</div>
 			<div class="unos">
-				<label for="bd" class="lab">Broj godina:</label> 
-				<input   class="polje" type="number" id="bd">
+				<label for="dr" class="lab">Drzava: </label> 
+				<select class="polje"  id="dr"> 
+                  <option value="bih">BIH </option>
+                  <option value="hr">HR </option>
+                  <option value="srb">SRB </option>
+				</select> 
+
+			</div>
+			<div class="unos">
+				<label for="bt" class="lab" >Broj Telefona:</label> 
+				<input   class="polje" type="text" id="bt" oninput="ispravnostTelefona()"   placeholder="Format:+38762785852"  >
 
 			</div><br>
 			<button class="Reg" >Registracija</button> 

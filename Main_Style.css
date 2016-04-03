@@ -47,7 +47,7 @@ body {
 }
 
 .row {
-
+	
 }
 .rec{
 
@@ -62,7 +62,7 @@ body {
 }
 .rec1{
 	clear: both;
-    margin-left: 500px;
+    margin-left: 39%;
 	font-family:Impact, sans-serif ;
 	font-size: 18px;
 	font-style: normal;
@@ -71,12 +71,14 @@ body {
 	
 }
 .col{
+	 z-index: 10;
 	background-color:#f2c5c5 ;
 	float: left;
     border-radius: 8px;
     padding: 5px;
 	margin: 2%;
 	width: 20%;
+
 }
 .Jesic{
 	width: 80%;
@@ -136,6 +138,11 @@ footer
 	 padding-top: 1em;
 
 }
+.novosti
+{
+	
+	
+}
 .Forma{
 	clear: both;
 	bottom: 0px;
@@ -143,7 +150,7 @@ footer
 	
     border-radius: 8px;
    
-	margin-left: 40%;
+	margin-left: 32%;
 	width:25%;
 	color: #730404;
 	
@@ -178,6 +185,9 @@ footer
 	border-radius: 10px;
 	padding: 10px;
 }*/
+#n1da,#n2da, #n3da,#n4da,#n5da,#n6da,#n7da,#n8da,#n9da,#n10da,#n11da,#n12da{
+	visibility: hidden;
+}
 table  {
 
 	  padding: 2px;
@@ -214,10 +224,31 @@ tr:nth-child(odd) {background: linear-gradient( #990000, #ff8080);}
 input {
 float: right;
 }
+#dr {
+float: right;
+}
 .clan
 {
 	margin-left: 250px;
 	border-radius: 10px;
+}
+.sortirajm{
+	position: absolute;
+	margin-left: 61%;
+
+	top:42%;
+    font-size: 120%;
+}
+.sortiraj{
+	position: absolute;
+    margin-left: 50%;
+	top:38%;
+    font-size: 150%;
+
+
+}
+.odabir{
+	background-color:black ;
 }
 .Linkovi{
 	
@@ -227,7 +258,10 @@ float: right;
 	color: #e8e8e8;
 	
 }
-
+.n{
+	text-decoration: none;
+	color: black;
+}
 
 .active:hover{
 	
@@ -235,6 +269,7 @@ float: right;
 	background: url('lopta.gif') left no-repeat  ;
 
 }
+
 .active{
 	color: #e8e8e8;
 	text-decoration: none;
