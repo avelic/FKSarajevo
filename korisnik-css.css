@@ -19,7 +19,7 @@ nav ul li   {
             display:table-row ;
             display:table-cell;
             margin: 2%;
-	        width: 15%;
+	        width: 10%;
 	line-height: 80px;
 	
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -301,4 +301,123 @@ ul{
 	position: absolute;
 	top: 220px;
 	border-radius: 5px;
+}
+import url(http://fonts.googleapis.com/css?family=Gabriela);
+
+html{
+  position: relative;
+  min-height: 100%;
+}
+
+
+
+body{
+  
+  margin-bottom: 30px;
+  width: 100%;
+  overflow-x:hidden;
+  
+}
+
+/*kopirani css*/
+#menu{
+  font-size: 30px;
+  font-family: Gabriela;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    margin-left: 34px;
+}
+
+.linkNavbar{
+	text-decoration: none;
+	color: white;
+	height: 35px;
+}
+
+.linkNavbar:hover{
+	background-color: #ff9900;
+}
+
+.active{
+	color: purple;
+}
+
+
+
+.loader {
+  border: 16px solid #f3f3f3;
+    border-radius: 23px;
+    border-top: 16px solid blue;
+    border-right: 16px solid #C3AD0B;
+    border-bottom: 16px solid #5D065A;
+    border-left: 16px solid #D61234;
+    width: 52px;
+    height: 52px;
+    animation: spin 8s linear infinite;
+    font-size: 18px;
+    color: white;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*kraj kopiranog cssa*/
+
+
+input,select {
+    border-radius: 3px;
+    border: solid 4px #b6c7cb;
+    line-height: 31px;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+
+textarea{
+   border-radius: 3px;
+    border: solid 1px #b6c7cb;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%; 
+}
+
+.form-frame{
+  margin:auto;
+  width: 30%;
+}
+
+label{
+  color:#e8e8e8;
+}
+
+.logout{
+  text-align: right;
+  margin-right: 2%;
+  margin-top: -5px;
+}
+
+.logout a{
+  color:#e8e8e8;
+}
+
+#imgFile{
+  color:white;
+}
+
+h4{
+  color: red;
+}
+
+.success{
+  color: green;
+}
+#sortb{
+
+width:200px;
+ margin-right: 45%;
+
 }

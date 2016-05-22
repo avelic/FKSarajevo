@@ -1,0 +1,30 @@
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+
+body
+{
+    background-image: url("login.gif");
+}
+
+.login-frame{
+	margin:auto;
+	width: 16%;
+}
+
+
+input {
+	border-radius: 3px;
+    border: solid 1px #b6c7cb;
+    line-height: 31px;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+h4{
+	color: white;
+    text-align: center;
+}
+
+a{
+    color: #e8e8e8;
+}

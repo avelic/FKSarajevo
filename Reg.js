@@ -73,56 +73,49 @@ function ispravnostUser()
 
 		}
 	}*/
-	function ispravnostTelefona() {
-
-		if (/(\+[0-9]{11})$/.test(document.getElementById("bt").value)) {
+	
+function ispravnostTelefona() {
+	
+	if (/(\+[0-9]{11})$/.test(countryCode.value)) {
 			
-			
+		var req = new XMLHttpRequest();
+		
+		
 
-			document.getElementById("bt").style.backgroundColor="white";
+			req.onreadystatechange = function() {
+
+				if (req.readyState === 4 && req.status === 200) {
+
+					if (req.responseText === "OK") {
 
 
-			var parametar = document.getElementById("bt").value.substring(1, 4);
-			if (document.getElementById("dr").selectedIndex==1)
-			{
-				if (parametar=="385") 
-				{
-					document.getElementById("bt").style.backgroundColor="white"
+						document.getElementById("phone").style.backgroundColor="white";
+					}
+					
+					else {
+
+						
+						document.getElementById("phone").style.backgroundColor="red";
+						alert("Neispravan kod države !");
+					}
 				}
-				else 
-				{
-					document.getElementById("bt").style.backgroundColor="red"
-				}
-			}
-			if (document.getElementById("dr").selectedIndex==2)
-			{
-				if (parametar=="381") 
-				{
-					document.getElementById("bt").style.backgroundColor="white"
-				}
-				else 
-				{
-					document.getElementById("bt").style.backgroundColor="red"
-				}
-			}
-			if (document.getElementById("dr").selectedIndex==0)
-			{
-				if (parametar=="387") 
-				{
-					document.getElementById("bt").style.backgroundColor="white"
-				}
-				else 
-				{
-					document.getElementById("bt").style.backgroundColor="red"
+
+				if(req.readyState === 4 && req.status === 404) {
+
+					alert( "Web servis je nedostupan !");
+
 				}
 			}
-
-
-		}
-
-		else {
-
-			document.getElementById("bt").style.backgroundColor="red";
-
-		}
+		
+		var parametar =countryCode.value.substring(1, 4);
+		req.open("GET", "http://zamger.etf.unsa.ba/telKod.php?telKod=" + parametar, true);
+		req.send();
+		
+		document.getElementById("phone").style.backgroundColor="green";
 	}
+	
+	else {
+
+		document.getElementById("phone").style.backgroundColor="red";
+	}
+}
