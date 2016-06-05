@@ -82,7 +82,7 @@ session_start();
    </div>
  </form>
  <br><br>
- <h4><a href="../../korisnik.php">Uđite na stranicu</a></h4>
+ <h4><a href="korisnik.php">Uđite na stranicu</a></h4>
  <h4><?php echo $msg; ?></h4>
  
 
