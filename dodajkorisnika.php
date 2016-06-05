@@ -5,9 +5,9 @@ session_start();
 <html>
 <head>
   <title>Postani bordo prijatelj</title>
-  <link rel="stylesheet" type="text/css" href="./../loginStyle.css">
+  <link rel="stylesheet" type="text/css" href="loginStyle.css">
   <link rel="stylesheet" type="text/css" href="korisnik-css.css">
-  <SCRIPT src="./../login.js"></SCRIPT>
+  <SCRIPT src="login.js"></SCRIPT>
   <META http-equiv="Content-Type" content="text/html; charset=utf-8">
   </head>
   <body>
@@ -59,7 +59,7 @@ session_start();
      $ime = $_POST['user-name'];
     $pass =sha1($_POST['password']) ;
      $rezultat = $veza->query ("INSERT INTO autori (username,password) VALUES ('$ime', '$pass')"); 
-     header('Refresh: 1; URL = ./../dodajkorisnika.php');
+     header('Refresh: 1; URL = dodajkorisnika.php');
      
      if (!$rezultat) {
           $greska = $veza->errorInfo();

@@ -22,7 +22,7 @@ session_start();
       <h1 >Fudbalski Klub Sarajevo</h1>
       
       <h2 class="Logo">HzsA</h2>
-      <h4 id="log"><a href = "./../logout.php" title = "Logout">Logout</a></h4>
+      <h4 id="log"><a href = "logout.php" title = "Logout">Logout</a></h4>
       <nav>
         <ul class="intro" >
           <li><a href="korisnik.php" class="meni">POČETNA</a></li>
@@ -149,7 +149,7 @@ session_start();
            
              $ko = $veza->query ("INSERT INTO komentar (Vijest_ID,Autor_ID,Kom,Vrijeme) VALUES ('$i', '$pisac', '$te',CURRENT_TIMESTAMP)"); 
 
-              header('Refresh: 1; URL = ./../pokazi.php?IID='.$i.'');
+              header('Refresh: 1; URL = pokazi.php?IID='.$i.'');
              
      if (!$ko) {
       $greska = $veza->errorInfo();

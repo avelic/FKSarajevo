@@ -5,8 +5,8 @@ session_start();
 <html>
 <head>
   <title>Postani bordo prijatelj</title>
-  <link rel="stylesheet" type="text/css" href="./../loginStyle.css">
-  <SCRIPT src="./../login.js"></SCRIPT>
+  <link rel="stylesheet" type="text/css" href="loginStyle.css">
+  <SCRIPT src="login.js"></SCRIPT>
   <META http-equiv="Content-Type" content="text/html; charset=utf-8">
   </head>
   <body>
@@ -59,7 +59,7 @@ session_start();
           $_SESSION['timeout'] = time();
           $_SESSION['user-name'] = $autori['username'];
           $_SESSION['id'] = $autori['id'];
-          header('Refresh: 1; URL = ./../dodajkorisnika.php');
+          header('Refresh: 1; URL = dodajkorisnika.php');
          }
          else 
          {
@@ -68,7 +68,7 @@ session_start();
       $_SESSION['user-name'] = $autori['username'];
       $_SESSION['id'] = $autori['id'];
 
-      header('Refresh: 1; URL = ./../korisnik.php');
+      header('Refresh: 1; URL = korisnik.php');
          }
       
     }else {
@@ -84,7 +84,7 @@ session_start();
    </div>
  </form>
  <h4><?php echo $msg; ?></h4>
- <h4><a href="./../Pocetna.html">Nastavite kao gost</a></h4>
+ <h4><a href="Pocetna.html">Nastavite kao gost</a></h4>
 
 </body>
 </html>

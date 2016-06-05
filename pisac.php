@@ -23,7 +23,7 @@ session_start();
       <h1 >Fudbalski Klub Sarajevo</h1>
       
       <h2 class="Logo">HzsA</h2>
-      <h4 id="log"><a href = "./../logout.php" title = "Logout">Logout</a></h4>
+      <h4 id="log"><a href = "logout.php" title = "Logout">Logout</a></h4>
       <nav>
         <ul class="intro" >
           <li><a href="korisnik.php" class="meni">POČETNA</a></li>
