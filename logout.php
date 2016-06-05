@@ -1,6 +1,9 @@
 <?php
-   session_start();
-   unset($_SESSION["user-name"]);
-   unset($_SESSION["password"]);
+   
+   
+   session_unset(); 
+
+
+   
    header('Refresh:1; URL = ./../login.php');
 ?>

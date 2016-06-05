@@ -1,0 +1,1 @@
+Imaju 3 acounta za autora "admin", "admin1" i "admin2" i 1 glavni acount "administrator" koji kreira admine passwordi za acounte su isiti kao i username 

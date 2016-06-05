@@ -18,7 +18,7 @@
           <li><a href="Tabela.php" class="meni" >TABELA</a></li>
           <li><a href="Clanovi.php" class="meni" >ČLANOVI</a></li>
           <li><a href="Kontakt.php" class="meni" >KONTAKT</a></li>
-          <li><a href="vijest.php" class="meni" >DODAJ VIJEST</a></li>
+          <li><a href="vijest.php" class="meni" >DODAJ IGRACA</a></li>
 				</ul>
 			</nav>
 		</header>

@@ -65,7 +65,7 @@ function phoneCode(){
 
 function ispravnostTelefona() {
   
- if (/(\+[0-9]{11})$/.test(document.getElementById("phone").value)) {
+ if (/(\+[0-9]{12})$/.test(document.getElementById("phone").value)) {
       
     var req = new XMLHttpRequest();
     
@@ -96,6 +96,6 @@ function ispravnostTelefona() {
   
   else {
 
-    document.getElementById("phone").style.backgroundColor="red";
+    document.getElementById("phone").style.backgroundColor="white";
   }
 }

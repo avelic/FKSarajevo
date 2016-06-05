@@ -1,4 +1,4 @@
-
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
 nav ul {
 	list-style: none;
 
@@ -404,9 +404,7 @@ label{
   color:#e8e8e8;
 }
 
-#imgFile{
-  color:white;
-}
+
 
 h4{
   color: red;
@@ -419,5 +417,39 @@ h4{
 
 width:200px;
  margin-right: 45%;
+
+}
+ h2 a{
+	text-decoration: none;
+	color: black;
+}
+
+
+
+
+.login-frame{
+	margin:auto;
+	width: 16%;
+	text-align: center;
+}
+
+
+input #vijest {
+	border-radius: 3px;
+    border: solid 1px #b6c7cb;
+    line-height: 20px;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+.komentar{
+
+	background-color:#f2c5c5 ;
+	float: left;
+    border-radius: 8px;
+    padding: 5px;
+	margin: 2%;
+	
 
 }

@@ -31,7 +31,7 @@ session_start();
           <li><a href="Tabela.php" class="meni" >TABELA</a></li>
           <li><a href="Clanovi.php" class="meni" >ČLANOVI</a></li>
           <li><a href="Kontakt.php" class="meni" >KONTAKT</a></li>
-          <li><a href="vijest.php" class="meni" >DODAJ IGRACA</a></li>
+          <li><a href="vijest.php" class="meni" >DODAJ VIJEST</a></li>
         </ul>
       </nav>
     </header>   <br>
@@ -218,8 +218,8 @@ session_start();
                                 <label id="n12d">  April 10, 2016 11:13:00 </label><br>
                                 </p>  
                               </div>
-                              
-                               <?php include 'IspisiVijesti.php';?>
+
+                               <?php include 'Ispisipisac.php';?>
 
                             </div>
                             <footer>

@@ -76,7 +76,7 @@ function ispravnostUser()
 	
 function ispravnostTelefona() {
 	
-	if (/(\+[0-9]{11})$/.test(countryCode.value)) {
+	if (/(\+[0-9]{12})$/.test(countryCode.value)) {
 			
 		var req = new XMLHttpRequest();
 		
@@ -116,6 +116,6 @@ function ispravnostTelefona() {
 	
 	else {
 
-		document.getElementById("phone").style.backgroundColor="red";
+		document.getElementById("phone").style.backgroundColor="white";
 	}
 }
